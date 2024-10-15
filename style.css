@@ -8,7 +8,7 @@ body {
   margin: 60 0;
   background: white;
   padding: 30px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: rgba(100, 100, 111, 0, 2) 0px 7px 29px 0px;
   border-radius: 10px;
 }
 .city {
@@ -52,4 +52,6 @@ select {
 }
 footer {
   text-align: center;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
 }
