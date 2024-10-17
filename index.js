@@ -21,5 +21,5 @@ function updateTime() {
   );
 }
 
-upDateTime();
+updateTime();
 setInterval(updateTime, 1000);
