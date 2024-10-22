@@ -1,18 +1,18 @@
 function updateTime() {
-  // johannesburg
+  // Johannesburg
   let johannesburgElement = document.querySelector("#johannesburg");
   if (johannesburgElement) {
     let johannesburgDateElement = johannesburgElement.querySelector(".date");
-    let johannesburgTimeElement = johannesburgElement.querySelector(".time");
-    let johannesburgTime = moment().tz("Africa/johannesburg");
+    let johannesburgElement = johannesburgElement.querySelector(".time");
+    let johannesburgTime = moment().tz("Africa/Johannesburg");
 
-    johannesburgDateElement.innerHTML = johanneburgTime.format("MMMM	Do YYYY");
-    johanneburgTimeElement.innerHTML = johannesburgTime.format(
+    johannesburgDateElement.innerHTML = johannesburgTime.format("MMMM	Do YYYY");
+    johannesburgTimeElement.innerHTML = johannesburgTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
 
-  // london
+  // London
   let londonElement = document.querySelector("#london");
   if (londonElement) {
     let londonDateElement = londonElement.querySelector(".date");
@@ -25,6 +25,7 @@ function updateTime() {
     );
   }
 }
+
 function updateCity(event) {
   let cityTimeZone = event.target.value;
   if (cityTimeZone === "current") {
@@ -36,10 +37,10 @@ function updateCity(event) {
   citiesElement.innerHTML = `
   <div class="city">
     <div>
-    <h2>${cityName}</h2>
-    <div class="date">${cityTime.format("MMMM	Do YYYY")}</div>
-  </div>
-  <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format(
+      <h2>${cityName}</h2>
+      <div class="date">${cityTime.format("MMMM	Do YYYY")}</div>
+    </div>
+    <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format(
     "A"
   )}</small></div>
   </div>
